@@ -2269,6 +2269,7 @@ input, select, textarea {
 /* Image */
 
 	.image {
+		
 		border-radius: 6px;
 		border: 0;
 		display: inline-block;
@@ -3611,7 +3612,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		background-color: #4696e5;
+		background-color: #000000;
 		color: #d1e5f9;
 		padding: 4.5em 0 2.5em 0 ;
 		-moz-align-items: center;
@@ -3633,6 +3634,34 @@ input, select, textarea {
 		height: 100vh;
 		min-height: 35em;
 	}
+
+
+	/* DEMO-SPECIFIC STYLES */
+	.typewriter h1 {
+	  color: #fff;
+	  font-family: monospace;
+	  overflow: hidden; /* Ensures the content is not revealed until the animation */
+	  border-right: .15em solid orange; /* The typwriter cursor */
+	  white-space: nowrap; /* Keeps the content on a single line */
+	  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	  letter-spacing: .15em; /* Adjust as needed */
+	  animation: 
+	    typing 3.5s steps(30, end),
+	    blink-caret 1s step-end infinite;
+	}
+
+	/* The typing effect */
+	@keyframes typing {
+	  from { width: 0 }
+	  to { width: 100% }
+	}
+
+	/* The typewriter cursor effect */
+	@keyframes blink-caret {
+	  from, to { border-color: transparent }
+	  50% { border-color: orange }
+	}
+
 
 		#header input[type="submit"],
 		#header input[type="reset"],
