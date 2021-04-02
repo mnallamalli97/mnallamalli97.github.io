@@ -2915,8 +2915,36 @@ input, select, textarea {
 		border-color: #e6e6e6;
 	}
 
-/* Wrapper */
+/* Image Modal */
 
+#mainContainer, #footerArea {
+				width: 660px;
+				margin-bottom: 30px;
+			}
+			
+			#footerArea {
+				clear: both;
+			}
+			
+			#leftNav {
+				float: left;
+			}
+			
+			#rightDisplay, #rightText {
+				float: right;
+				width: 500px;
+				margin: 0;
+				text-align: center;
+			}
+			
+			#rightText {
+				margin-bottom: 30px;
+			}
+			
+			img {
+				margin: 10px 0 10px 0;
+			}
+/* Wrapper */
 	.wrapper {
 		padding: 4.5em 0 2.5em 0 ;
 		background-color: #ffffff;
