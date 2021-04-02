@@ -2917,7 +2917,7 @@ input, select, textarea {
 
 /* Image Modal */
 
-#mainContainer, #footerArea {
+	#mainContainer, #footerArea {
 				width: 660px;
 				margin-bottom: 30px;
 			}
@@ -2944,7 +2944,51 @@ input, select, textarea {
 			img {
 				margin: 10px 0 10px 0;
 			}
+
+/* Flashing Word Text */
+
+
+	#comment {
+	    display: none;
+	}
+
+	#reader {
+		border: 1px solid black;
+		border-radius: 20px;
+		margin-left: 20%;
+		margin-right: 20%;
+		margin-bottom: 30px;
+		padding-bottom: 15%;
+	    padding-top: 15%;
+	    position: relative;
+	    font-size: 40pt;
+		justify-content: center;
+		font-family: sans-serif;
+		font-weight: 500;
+		align-items: center;
+	}
+
+	#word {
+	    position: absolute;
+	    color: #000;
+
+	}
+
+	.highlight {
+	    color: #c00;
+	}
+
+	.horizontal-center {
+		display: flex;
+		justify-content: center;
+
+	}
+
+
+
+
 /* Wrapper */
+
 	.wrapper {
 		padding: 4.5em 0 2.5em 0 ;
 		background-color: #ffffff;
