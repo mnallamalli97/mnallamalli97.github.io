@@ -1,6 +1,7 @@
 var buttonEl = document.querySelector('#start');
 var buttonE2 = document.querySelector('#stop');
 var commentEl = document.querySelector('#comment');
+var titleEl = document.querySelector('#articleTitle');
 var urlEl = document.querySelector('#url');
 var wpmEl = document.querySelector('#wpm');
 var readerEl = document.querySelector('#reader');
@@ -48,10 +49,12 @@ buttonEl.addEventListener('click', function() {
     $.ajax(settings).done(function (response) {
       console.log(response);
 
+
       var words = response.article.text.split(/\s+/).map(processWord);
       var currentWord = 0;
       var delay = 60000 / parseInt(wpmEl.value, 10);
       var url = urlEl.value;
+      titleEl.innerHTML = response.article.title;
 
       clearTimeout(currentTimer);
 
@@ -71,8 +74,6 @@ buttonEl.addEventListener('click', function() {
 
       displayNextWord();
     });
-
-
   } else {
 
       var words = commentEl.textContent.split(/\s+/).map(processWord);
@@ -98,10 +99,6 @@ buttonEl.addEventListener('click', function() {
 
       displayNextWord();
   }
-
-
-
-
 
 });
 

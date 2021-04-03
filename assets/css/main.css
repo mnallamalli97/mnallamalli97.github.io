@@ -1,4 +1,5 @@
 @import url(fontawesome-all.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 /*
 	Fractal by HTML5 UP
@@ -2952,6 +2953,16 @@ input, select, textarea {
 	    display: none;
 	}
 
+	.mediabtn {
+	  width: 30px;
+	  height: 30px;
+	  text-align: center;
+	  padding: 6px 0;
+	  font-size: 12px;
+	  line-height: 1.428571429;
+	  border-radius: 15px;
+	}
+
 	#reader {
 		border: 1px solid black;
 		border-radius: 20px;
@@ -2961,9 +2972,9 @@ input, select, textarea {
 		padding-bottom: 15%;
 	    padding-top: 15%;
 	    position: relative;
-	    font-size: 40pt;
+	    font-size: 2em;
 		justify-content: center;
-		font-family: sans-serif;
+		font-family: 'Montserrat';
 		font-weight: 500;
 		align-items: center;
 	}
@@ -2984,8 +2995,16 @@ input, select, textarea {
 
 	}
 
+	#myProgress {
+	  width: 100%;
+	  background-color: grey;
+	}
 
-
+	#myBar {
+	  width: 1%;
+	  height: 30px;
+	  background-color: green;
+	}
 
 /* Wrapper */
 
@@ -3646,6 +3665,11 @@ input, select, textarea {
 				.wrapper > .inner {
 					width: 100%;
 				}
+			#reader {
+
+	    	font-size: 3em;
+
+			}
 
 		}
 
@@ -3653,6 +3677,12 @@ input, select, textarea {
 
 		.wrapper {
 			padding: 3em 3em 1em 3em ;
+		}
+
+		#reader {
+
+	    	font-size: 2em;
+
 		}
 
 	}
@@ -3663,6 +3693,12 @@ input, select, textarea {
 			padding: 3em 1.5em 1em 1.5em ;
 		}
 
+		#reader {
+
+	    	font-size: 1em;
+
+		}
+
 	}
 
 	@media screen and (max-width: 480px) and (orientation: landscape) {
@@ -3671,6 +3707,13 @@ input, select, textarea {
 			padding: 2em 1.5em 0.1em 1.5em ;
 		}
 
+			#reader {
+
+	    	font-size: .5em;
+
+		}
+
+
 	}
 
 	@media screen and (max-width: 480px) and (orientation: portrait) {
@@ -3678,6 +3721,12 @@ input, select, textarea {
 		.wrapper {
 			padding: 2em 1em 0.1em 1em ;
 		}
+
+			#reader {
+
+	    	font-size: .5em;
+
+			}
 
 	}
 

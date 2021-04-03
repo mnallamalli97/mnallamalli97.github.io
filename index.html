@@ -23,7 +23,7 @@
 	  					<source src="images/mockup.mp4" type='video/mp4; codecs="hvc1"' />
 	  					<source src="images/output.webm" type="video/webm">
 					</video>
-					<h6> Powered by Android OS</h6>
+					<h6 style="font-family: 'Montserrat'"> Powered by Android OS</h6>
 				</div>
 
 
@@ -32,16 +32,15 @@
   						<h1><a href="https://play.google.com/store/apps/details?id=com.mnallamalli97.speedread">Speed Read</a></h1>
 					</div>
 					
-					<p>An Android reader brought to you by <br> <a href="https://soundcloud.com/blue-moon-records" style="color: #d1e5f9"><u>Blue Moon Records</u></a></br> </p>
+					<p style="font-family: 'Montserrat'">An Android reader brought to you by <br> <a href="https://soundcloud.com/blue-moon-records" style="color: #d1e5f9"><u>Blue Moon Records</u></a></br> </p>
 					<ul class="actions">
-						<li><a href="https://play.google.com/store/apps/details?id=com.mnallamalli97.speedread" class="button primary icon solid fa-download" target="_blank">Download</a></li>
-						<li><a href="#one" class="button icon solid fa-chevron-down scrolly">Learn More</a></li>
+						<li><a style="font-family: 'Montserrat'" href="https://play.google.com/store/apps/details?id=com.mnallamalli97.speedread" class="button primary icon solid fa-download" target="_blank">Download</a></li>
+						<li><a  style="font-family: 'Montserrat'" href="#browser" class="button icon solid fa-chevron-down scrolly">Read on browser</a></li>
 					</ul>
 				</div>
 			</header>
 
-			<section id="one" class="wrapper">
-				
+			<section id="browser" class="wrapper">
 
 				<p id="comment">The average person can read at 150 words per minute. Our brains can process information much faster than our eyes can scan. 
 
@@ -54,13 +53,13 @@
 
 					Speed Read, an android app, trains your brain to double your reading and retention speed, overnight.</p>
 
-				<h1 style="text-align: center;">Speed Read News and Magazines articles on the web</h1>		
+				<h2 id="articleTitle" style="text-align: center; color: #000; font-family: 'Montserrat'; font-size: 1.5em;">Speed Read News and Magazines articles on the web. </h2>		
 				<div id="reader">
 				    <div id="word"></div>
 				</div>
 
 				<div class="horizontal-center" style="margin-left: 20%; margin-right: 20%; margin-bottom: 20px;">
-					<input type="text" placeholder="enter article url" id="url">
+					<input type="text" value="https://www.nytimes.com/2021/04/01/us/bees-car-new-mexico.html?smtyp=cur&smid=tw-nytimes" placeholder="enter article url" id="url">
 				</div>
 
 				<div class="horizontal-center" style="margin-left: 20%; margin-right: 20%; margin-bottom: 20px;">
@@ -68,29 +67,10 @@
 				</div>
 
 				<div class="horizontal-center">
-					<button id="start" style="margin-right: 20px;">Start</button>
-					<button id="stop">Stop</button>	
+					<button id="start" style="margin-right: 20px; font-family: 'Montserrat';">Start</button>
+					<button id="stop" style="font-family: 'Montserrat'">Pause</button>	
 				</div>
-
-
-
 			
-			</section>
-
-
-			<section id="two" class="wrapper">
-				<div style="margin-left: 15px; margin-right: 15px;" >
-					<div class="box alt">
-						<div class="row gtr-uniform" style="align-self: center;">
-							<div class="col-2"><span class="image fit"><img src="images/image1.jpeg" alt="" /></span></div>
-							<div class="col-2"><span class="image fit"><img src="images/image2.jpeg" alt="" /></span></div>
-							<div class="col-2"><span class="image fit"><img src="images/image4.jpeg" alt="" /></span></div>
-							<div class="col-2"><span class="image fit"><img src="images/image3.jpeg" alt="" /></span></div>
-							<div class="col-2"><span class="image fit"><img src="images/image5.jpeg" alt="" /></span></div>
-							<div class="col-2"><span class="image fit"><img src="images/logo.png" alt="" /></span></div>
-						</div>
-					</div>
-				</div>
 			</section>
 
 
@@ -112,6 +92,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/flashingWords.js"></script>
-
+			<!-- <script src="assets/js/nudge.js"></script> -->
 	</body>
 </html>
