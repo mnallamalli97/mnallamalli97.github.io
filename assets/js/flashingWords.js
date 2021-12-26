@@ -35,26 +35,34 @@ buttonEl.addEventListener('click', function() {
   buttonEl.innerHTML = "Restart"
 
   if (urlEl.value != "") {
+
+
+
     const settings = {
       "async": true,
       "crossDomain": true,
-      "url": "https://lexper.p.rapidapi.com/v1.1/extract?url=" + urlEl.value,
-      "method": "GET",
+      "url": "https://news-article-data-extract-and-summarization1.p.rapidapi.com/extract/",
+      "method": "POST",
       "headers": {
-        "x-rapidapi-key": "f46e5c8c90msh9778f06fc8c5a49p16d051jsn87608541b961",
-        "x-rapidapi-host": "lexper.p.rapidapi.com"
-      }
+        "content-type": "application/json",
+        "x-rapidapi-host": "news-article-data-extract-and-summarization1.p.rapidapi.com",
+        "x-rapidapi-key": "f46e5c8c90msh9778f06fc8c5a49p16d051jsn87608541b961"
+      },
+      "processData": false,
+      "data": JSON.stringify({
+        "url": urlEl.value
+      }) 
     };
 
     $.ajax(settings).done(function (response) {
       console.log(response);
 
 
-      var words = response.article.text.split(/\s+/).map(processWord);
+      var words = response.text.split(/\s+/).map(processWord);
       var currentWord = 0;
       var delay = 60000 / parseInt(wpmEl.value, 10);
       var url = urlEl.value;
-      titleEl.innerHTML = response.article.title;
+      titleEl.innerHTML = response.title;
 
       clearTimeout(currentTimer);
 
